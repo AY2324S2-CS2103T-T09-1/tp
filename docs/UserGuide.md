@@ -3,6 +3,15 @@ layout: page
 title: User Guide
 ---
 
+--------------------------------------------------------------------------------------------------------------------
+
+## 1. Welcome!
+
+Thank you for choosing to use TeachStack! Our product aims to help you allocate resources to keep track of weaker students,
+and is optimized to be used with the Command Line Interface (CLI).
+This is achieved through the use of focus groups, which identifies students in need and monitors their performance.
+So, are you ready to help students in need?
+
 <!-- * Table of Contents -->
 
 ## Table of contents
@@ -33,14 +42,32 @@ title: User Guide
 
 --------------------------------------------------------------------------------------------------------------------
 
-## 1. Welcome!
+## 6. How to use the user guide
 
-Thank you for choosing to use TeachStack! Our product aims to help you allocate resources to keep track of weaker students,
-and is optimized to be used with the Command Line Interface (CLI).
-This is achieved through the use of focus groups, which identifies students in need and monitors their performance.
-So, are you ready to help students in need?
+This guide explains how you can use TeachStack to manage weaker students. It will walk you through each feature and functionality of the app, ensuring you're equipped to make the most of Teachstack's capabilities.
 
---------------------------------------------------------------------------------------------------------------------
+* To get started with TeachStack. [Quick start](#quick-start)
+* To understand the GUI. [Understanding our GUI](#understanding-our-gui)
+* To see details of the commands and features. [Features](#features)
+* To quickly navigate to a specific section. [Table of contents](#table-of-contents)
+* To see an overview of all commands. [Command summary](#command-summary)
+* If you encounter any technical term, please refer to the glossary. [Glossary](#glossary)
+* If you encounter any problem, you may find your answer in the FAQ. [FAQ](#faq)
+
+### 6.1 Terminologies / Symbols
+
+Extra information are given in boxes:
+* <div markdown="block" class="alert alert-info">:information_source: denotes additional information</div>
+* <div markdown="block" class="alert alert-warning">:exclamation: denotes warning that can cause error</div>
+
+The explanation of each command will be formatted in the following convention
+1. What the command does
+2. The format of the command
+3. Valid values that the command can take in
+4. Example usages
+5. _Optional Screenshot_
+
+---------------------------------------------------------------------------------
 
 ## 2. Target user/audience
 
@@ -89,33 +116,12 @@ and ensure optimal utilization of the application's capabilities.
 
 1. Refer to the [Features](#features) below for details of each command.
 
-## Understanding our GUI
+-----------------------------------------------------------------------------------------------------------
+## 4 Getting to know TeachStack
+
+### 4.1 User Interface
 
 --------------------------------------------------------------------------------------------------------------------
-## 6. How to use the user guide
-
-This guide explains how you can use TeachStack to manage weaker students. It will walk you through each feature and functionality of the app, ensuring you're equipped to make the most of Teachstack's capabilities.
-
-* To get started with TeachStack. [Quick start](#quick-start)
-* To understand the GUI. [Understanding our GUI](#understanding-our-gui)
-* To see details of the commands and features. [Features](#features)
-* To quickly navigate to a specific section. [Table of contents](#table-of-contents)
-* To see an overview of all commands. [Command summary](#command-summary)
-* If you encounter any technical term, please refer to the glossary. [Glossary](#glossary)
-* If you encounter any problem, you may find your answer in the FAQ. [FAQ](#faq)
-
-### 6.1 Terminologies / Symbols
-
-Extra information are given in boxes:
-* <div markdown="block" class="alert alert-info">:information_source: denotes additional information</div>
-* <div markdown="block" class="alert alert-warning">:exclamation: denotes warning that can cause error</div>
-
-The explanation of each command will be formatted in the following convention
-1. What the command does
-2. The format of the command
-3. Valid values that the command can take in
-4. Example usages
-5. _Optional Screenshot_
 
 ## 7. Features
 
