@@ -7,7 +7,9 @@ title: User Guide
 
 ## 1. Welcome!
 
-Thank you for choosing to use TeachStack! Our product aims to help you allocate resources to keep track of weaker students,
+Thank you for choosing to use TeachStack! 
+
+TeachStack aims to help you allocate resources to keep track of weaker students,
 and is optimized to be used with the Command Line Interface (CLI).
 This is achieved through the use of focus groups, which identifies students in need and monitors their performance.
 So, are you ready to help students in need?
@@ -18,12 +20,14 @@ So, are you ready to help students in need?
 
 - [Table of Contents](#table-of-contents)
 - [1. Welcome](#1-welcome-)
-- [2. Target User](#2-target-useraudience)
-  - [2.1 Assumptions](#21-assumptions)
-- [3. Purpose of User Guide (UG)](#3-purpose-of-user-guide--ug-)
+- [2. How to use this user guide](#2-how-to-use-the-user-guide)
+  - [2.1 Terminologies and Symbols](#21-terminologies--symbols)
+- [3. Target User](#3-target-useraudience)
+  - [3.1 Assumptions](#31-assumptions)
+- [4. Purpose of User Guide (UG)](#4-purpose-of-user-guide--ug-)
 - [5. Quick Start](#5-quick-start)
-- [6. How to use this user guide](#6-how-to-use-the-user-guide)
-  - [6.1 Terminologies and Symbols](#61-terminologies--symbols)
+- [6. Getting to know TeachStack](#6-getting-to-know-teachstack)
+  - [6.1 Understanding our user interface](#61-user-interface)
 - [7. Features](#7-features)
   - [7.1 Viewing Help](#71-viewing-help--help)
   - [7.2 Adding a student](#72-adding-a-person--add)
@@ -42,7 +46,7 @@ So, are you ready to help students in need?
 
 --------------------------------------------------------------------------------------------------------------------
 
-## 6. How to use the user guide
+## 2. How to use the user guide
 
 This guide explains how you can use TeachStack to manage weaker students. It will walk you through each feature and functionality of the app, ensuring you're equipped to make the most of Teachstack's capabilities.
 
@@ -54,7 +58,7 @@ This guide explains how you can use TeachStack to manage weaker students. It wil
 * If you encounter any technical term, please refer to the glossary. [Glossary](#glossary)
 * If you encounter any problem, you may find your answer in the FAQ. [FAQ](#faq)
 
-### 6.1 Terminologies / Symbols
+### 2.1 Terminologies / Symbols
 
 Extra information are given in boxes:
 * <div markdown="block" class="alert alert-info">:information_source: denotes additional information</div>
@@ -69,17 +73,17 @@ The explanation of each command will be formatted in the following convention
 
 ---------------------------------------------------------------------------------
 
-## 2. Target user/audience
+## 3. Target user/audience
 
 The growing population of computer science students worldwide presents a novel set of problems administratively for computer science instructors which TeachStack aims to address. Therefore, TeachStack is tailored for computer science instructors, not limited to those within NUS.
 
-## 2.1 Assumptions
+## 3.1 Assumptions
 1. We assume that users are passionate educators who wish to see their students succeed. This is important as TeachStack mainly allows instructors to track the performance of weaker students, so the application can only demonstrate its full potential in the hands of instructors who care.
 2. We also assume that users are somewhat familiar with computers and have used computer applications in the past, which will help them follow this guide and use TeachStack effectively. Since most instructors will have used similar applications (e.g. Canvas), this is a reasonable assumption to make.
 
 --------------------------------------------------------------------------------------------------------------------
 
-## 3. Purpose of User Guide (UG)
+## 4. Purpose of User Guide (UG)
 
 The purpose of the User Guide (UG) for TeachStack is to provide users
 with a comprehensive understanding of the application's features and
@@ -117,9 +121,9 @@ and ensure optimal utilization of the application's capabilities.
 1. Refer to the [Features](#features) below for details of each command.
 
 -----------------------------------------------------------------------------------------------------------
-## 4 Getting to know TeachStack
+## 6 Getting to know TeachStack
 
-### 4.1 User Interface
+### 6.1 User Interface
 
 --------------------------------------------------------------------------------------------------------------------
 
