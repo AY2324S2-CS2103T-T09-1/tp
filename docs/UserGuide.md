@@ -3,8 +3,33 @@ layout: page
 title: User Guide
 ---
 
+<!-- * Table of Contents -->
+
 ## Table of contents
-  {:toc}
+
+- [Table of Contents](#table-of-contents)
+- [1. Welcome](#1-welcome-)
+- [2. Target User](#2-target-useraudience)
+  - [2.1 Assumptions](#21-assumptions)
+- [3. Purpose of User Guide (UG)](#3-purpose-of-user-guide--ug-)
+- [5. Quick Start](#5-quick-start)
+- [6. How to use this user guide](#6-how-to-use-the-user-guide)
+  - [6.1 Terminologies and Symbols](#61-terminologies--symbols)
+- [7. Features](#7-features)
+  - [7.1 Viewing Help](#71-viewing-help--help)
+  - [7.2 Adding a student](#72-adding-a-person--add)
+  - [7.3 Editing a student](#73-editing-a-person--edit)
+  - [7.4 Viewing a student](#74-viewing-students-by-name--view)
+  - [7.5 Deleting a student](#75-deleting-a-person--delete)
+  - [7.6 Clearing all entries](#76-clearing-all-entries--clear)
+  - [7.7 Exiting the program](#77-exiting-the-program--exit)
+  - [7.8 Saving data](#78-saving-the-data)
+  - [7.9 Editing the data file](#79-editing-the-data-file)
+  - [7.10 Archiving a student](#710-archiving-data-files-coming-in-v20)
+  - [7.11 Setting a weak threshold](#711-setting-weak-threshold-and-marker)
+  - [7.12 Viewing summary statistics](#712-viewing-summary-statistics)
+
+      {:toc}
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -79,7 +104,7 @@ This guide explains how you can use TeachStack to manage weaker students. It wil
 * If you encounter any technical term, please refer to the glossary. [Glossary](#glossary)
 * If you encounter any problem, you may find your answer in the FAQ. [FAQ](#faq)
 
-## Terminologies / Symbols
+### 6.1 Terminologies / Symbols
 
 Extra information are given in boxes:
 * <div markdown="block" class="alert alert-info">:information_source: denotes additional information</div>
@@ -92,7 +117,7 @@ The explanation of each command will be formatted in the following convention
 4. Example usages
 5. _Optional Screenshot_
 
-## Features
+## 7. Features
 
 <div markdown="block" class="alert alert-info">
 
@@ -118,7 +143,7 @@ The explanation of each command will be formatted in the following convention
 * If you are using a PDF version of this document, be careful when copying and pasting commands that span multiple lines as space characters surrounding line-breaks may be omitted when copied over to the application.
 </div>
 
-### Viewing help : `help`
+### 7.1 Viewing help : `help`
 
 Shows a message explaning how to access the help page.
 
@@ -127,7 +152,7 @@ Shows a message explaning how to access the help page.
 Format: `help`
 
 
-### Adding a person: `add`
+### 7.2 Adding a person: `add`
 
 Adds student details to the list of students.
 
@@ -143,7 +168,7 @@ Examples:
 * `add id/A01234567H n/John Doe e/e0123456@u.nus.edu`
 
 
-### Editing a person : `edit`
+### 7.3 Editing a person : `edit`
 
 Edits an existing person in the list of students.
 
@@ -161,7 +186,7 @@ Examples:
 *  `edit id/A2233445X n/Betsy Crower` Edits the name of the person with student_id = A2233445X to be `Betsy Crower`.
 
 
-### Viewing students by name: `view`
+### 7.4 Viewing students by name: `view`
 
 Shows the detailed information of the student with the specified student_id.
 
@@ -174,7 +199,7 @@ Format: `view STUDENT_ID`
 Examples:
 * `view A0123456X` Shows the detailed information of the student with `STUDENT_ID = A0123456X`
 
-### Deleting a person : `delete`
+### 7.5 Deleting a person : `delete`
 
 Deletes the specified student from the list.
 
@@ -188,23 +213,23 @@ Format: `delete STUDENT_ID`
 Examples:
 * `delete A0123456X` deletes the student with student id  A0123456X from the list.
 
-### Clearing all entries : `clear`
+### 7.6 Clearing all entries : `clear`
 
 Clears all entries from the list of students.
 
 Format: `clear`
 
-### Exiting the program : `exit`
+### 7.7 Exiting the program : `exit`
 
 Exits the program.
 
 Format: `exit`
 
-### Saving the data
+### 7.8 Saving the data
 
 TeachStack data is saved in the hard disk automatically after any command that changes the data. There is no need to save manually.
 
-### Editing the data file
+### 7.9 Editing the data file
 
 TeachStack data is saved automatically as a JSON file `[JAR file location]/data/teachstack.json`. Advanced users are welcome to update data directly by editing that data file.
 
@@ -213,26 +238,30 @@ If your changes to the data file makes its format invalid, TeachStack will disca
 Furthermore, certain edits can cause the TeachStack to behave in unexpected ways (e.g., if a value entered is outside of the acceptable range). Therefore, edit the data file only if you are confident that you can update it correctly.
 </div>
 
-### Archiving data files `[coming in v2.0]`
+### 7.10 Archiving data files `[coming in v2.0]`
 
 _Details coming soon ..._
 
+### 7.11 Setting Weak Threshold and Marker
+
+### 7.12 Viewing Summary Statistics
+
 --------------------------------------------------------------------------------------------------------------------
 
-## FAQ
+## 8. FAQ
 
 **Q**: How do I transfer my data to another Computer?<br>
 **A**: Install the app in the other computer and overwrite the empty data file it creates with the file that contains the data of your previous TeachStack home folder.
 
 --------------------------------------------------------------------------------------------------------------------
 
-## Known issues
+## 9. Known issues
 
 1. **When using multiple screens**, if you move the application to a secondary screen, and later switch to using only the primary screen, the GUI will open off-screen. The remedy is to delete the `preferences.json` file created by the application before running the application again.
 
 --------------------------------------------------------------------------------------------------------------------
 
-## Command summary
+## 10. Command summary
 
 | Action     | Format, Examples                                                                                                         |
 |------------|--------------------------------------------------------------------------------------------------------------------------|
