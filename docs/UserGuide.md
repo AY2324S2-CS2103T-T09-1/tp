@@ -233,6 +233,7 @@ Shows the detailed information of the student with the specified student_id.
 Format: `view STUDENT_ID`
 
 * Returns the detailed information of the student with the corresponding `STUDENT_ID`.
+* Displays student's email that is a clickable link to open the user's mailbox with a new email to the student's email address.
 * The `STUDENT_ID` is case-insensitive.
 * The `STUDENT_ID` starts with A and ends with a letter and it must be 9 characters long.
 
