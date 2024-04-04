@@ -400,7 +400,7 @@ If your changes to the data file makes its format invalid, TeachStack will disca
 Furthermore, certain edits can cause the TeachStack to behave in unexpected ways (e.g., if a value entered is outside of the acceptable range). Therefore, edit the data file only if you are confident that you can update it correctly.
 </div>
 
-### 7.14 Setting weak threshold
+### 7.14 Setting weak threshold: `setweak`
 
 Sets the weakness threshold for a weak marker.
 
@@ -422,7 +422,7 @@ After command `setweak B`
 
 ![](images/setWeakAfter.png)
 
-### 7.15 Viewing summary statistics
+### 7.15 Viewing summary statistics : `summary`
 
 Displays a summary of all students.
 
@@ -432,7 +432,7 @@ Format: `summary`
 * Popup contains statistics: Total Students, Average Grade, and Standard Deviation of Grades.
 * Popup contains pie chart of students' grades.
 
-Displayed after command: `summary`
+Displayed after command : `summary`
 ![](images/summary.png)
 
 
