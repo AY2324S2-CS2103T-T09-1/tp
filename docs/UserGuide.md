@@ -606,22 +606,23 @@ Displayed after the command: `summary`
 
 ## 11. Command summary
 
-| Action          | Format, Examples                                                                                                                    |
-|-----------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| **Add**         | `add id/STUDENT_ID n/NAME e/EMAIL g/GRADE [gp/GROUP_NAME]...` <br> e.g., `add id/A0123459X n/James Doe e/e0123456@u.nus.edu g/A`    |
-| **Delete**      | `delete STUDENT_ID`<br> e.g., `delete A0123456X`                                                                                    |
-| **Edit**        | `edit STUDENT_ID [id/STUDENT_ID] [n/NAME] [e/EMAIL] [g/GRADE] [gp/GROUP_NAME]...` <br> e.g.,`edit A0123466C g/A+`                   |
-| **View**        | `view STUDENT_ID`<br> e.g., `view A0123466D`                                                                                        |
-| **Group**       | `group gp/GROUP_NAME id/STUDENT_ID_1 [id/STUDENT_ID_2] ...` <br> e.g., `group gp/Group 1 id/A1234567R, id/A2345678R`                |
-| **Random Group** | `random NUMBER_OF_GROUPS gp/GROUP_NAME` <br> e.g., `random 3 gp/Random Group`                                                       |
-| **Weak**        | `setweak g/GRADE` <br> e.g., `setweak g/B`                                                                                          |
-| **Summary**     | e.g., `summary` <br>                                                                                                                |
-| **Archive**     | `archive STUDENT_ID` <br> e.g., `archive A0123459X`                                                                                 |
-| **Unarchive**   | `unarchived STUDENT_ID` <br> e.g., `unarchived A0123459X`                                                                           |
-| **EditArchive** | `edit_archived STUDENT_ID [id/STUDENT_ID] [n/NAME] [e/EMAIL] [g/GRADE] [gp/GROUP_NAME]...` <br> e.g., `edit_archived A0123459X g/B` |
+| Action            | Format, Examples                                                                                                                    |
+|-------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| **Add**           | `add id/STUDENT_ID n/NAME e/EMAIL g/GRADE [gp/GROUP_NAME]...` <br> e.g., `add id/A0123459X n/James Doe e/e0123456@u.nus.edu g/A`    |
+| **Delete**        | `delete STUDENT_ID`<br> e.g., `delete A0123456X`                                                                                    |
+| **Edit**          | `edit STUDENT_ID [id/STUDENT_ID] [n/NAME] [e/EMAIL] [g/GRADE] [gp/GROUP_NAME]...` <br> e.g.,`edit A0123466C g/A+`                   |
+| **View**          | `view STUDENT_ID`<br> e.g., `view A0123466D`                                                                                        |
+| **Group**         | `group gp/GROUP_NAME id/STUDENT_ID_1 [id/STUDENT_ID_2] ...` <br> e.g., `group gp/Group 1 id/A1234567R, id/A2345678R`                |
+| **Random Group**  | `random NUMBER_OF_GROUPS gp/GROUP_NAME` <br> e.g., `random 3 gp/Random Group`                                                       |
+| **Weak**          | `setweak g/GRADE` <br> e.g., `setweak g/B`                                                                                          |
+| **Filter Group**  | `find gp/GROUP_NAME ...` <br> e.g., `find gp/Group 1`                                                                               |
+| **Summary**       | e.g., `summary` <br>                                                                                                                |
+| **Archive**       | `archive STUDENT_ID` <br> e.g., `archive A0123459X`                                                                                 |
+| **Unarchive**     | `unarchived STUDENT_ID` <br> e.g., `unarchived A0123459X`                                                                           |
+| **EditArchive**   | `edit_archived STUDENT_ID [id/STUDENT_ID] [n/NAME] [e/EMAIL] [g/GRADE] [gp/GROUP_NAME]...` <br> e.g., `edit_archived A0123459X g/B` |
 | **DeleteArchive** | `delete_archived STUDENT_ID` <br> e.g., `delete_archived A0123459X`                                                                 |
-| **ClearArchive** | `clear_archived`                                                                                                                    |
-| **Help**        | `help`                                                                                                                              |
-| **Clear**       | `clear`                                                                                                                             |
-| **Exit**        | `exit`                                                                                                                              |
+| **ClearArchive**  | `clear_archived`                                                                                                                    |
+| **Help**          | `help`                                                                                                                              |
+| **Clear**         | `clear`                                                                                                                             |
+| **Exit**          | `exit`                                                                                                                              |
   
