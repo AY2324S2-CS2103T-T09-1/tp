@@ -33,7 +33,7 @@ Happy teaching!
     - [7.3 Listing all students](#73-listing-all-students--list)
     - [7.4 Editing a student](#74-editing-a-student--edit)
     - [7.5 Viewing a student](#75-viewing-students-by-name--view)
-    - [7.6 Deleting a student](#76-deleting-a-student--delete)
+    - [7.6 Deleting a student](#76-deleting-a-person--delete)
     - [7.7 Forming focus groups](#77-forming-focus-groups)
       - [7.7.1 Forming focus groups manually](#771-forming-focus-groups-manually--group)
       - [7.7.2 Forming focus groups randomly](#772-forming-random-groups--random)
@@ -196,32 +196,6 @@ and ensure optimal utilization of the application's capabilities.
 * If you are using a PDF version of this document, be careful when copying and pasting commands that span multiple lines as space characters surrounding line-breaks may be omitted when copied over to the application.
 </div>
 
-
-<div markdown="block" class="alert alert-info">
-
-**:information_source: Notes about the parameter format:**<br>
-
-* `TeachStack` only takes in English input.
-
-* All parameters are case-sensitive.
-
-* Name must only consist of letters, numbers and space characters. Special characters such as `/`, `-` are not allowed.<br>
-  eg. `John Doe` is valid, `John-Doe` is invalid.
-
-* Student id must start with `A`, followed by 7 digits `[0-9]`, and end with any capital letter `[A-Z]`. It should contain a total of 9 characters.<br>
-  eg. `A0123459X` is valid, `a012345678` is invalid.
-
-* Email must be in the format `username@domain`. The `username` should start with **e**, followed by 7 digits `[0-9]`. The `domain` should be **u.nus.edu**
-  eg. `e1234567@u.nus.edu` is valid, `e1234567@example.com` is invalid.
-
-* Grade must be one of **[A+, A, A-, B+, B, B-, C+, C, D+, D, F]**<br>
-  eg. `A+` is valid, `C-` is invalid.
-
-* Group name must only consist of letters, numbers and space characters.<br>
-  eg. `Focus Group 1` is valid, `Group !` is invalid.
-
-</div>
-
 ### 7.1 Viewing help : `help`
 
 Shows a message explaining how to access the help page.
@@ -233,7 +207,7 @@ Format: `help`
 
 ### 7.2 Adding a student : `add`
 
-Adds student details to the `persons` list.
+Adds student details to the person list.
 
 Format: `add id/STUDENT_ID n/NAME e/EMAIL g/GRADE [gp/GROUP_NAME]​...`
 
@@ -248,7 +222,7 @@ Format: `add id/STUDENT_ID n/NAME e/EMAIL g/GRADE [gp/GROUP_NAME]​...`
 
 
 Example:
-* `add id/A0123459X n/John Doe e/e0123456@u.nus.edu g/A` adds the student named John Doe with student_id "A0123459X", email "e0123456@u.nus.edu" and grade "A" to the list.
+* `add id/A0123459X n/John Doe e/e0123456@u.nus.edu g/A` adds the person named John Doe with student_id "A0123459X", email "e0123456@u.nus.edu" and grade "A" to the list.
 
 Expected output:
 ![AddUi](images/AddUI.png)
@@ -264,11 +238,11 @@ Format: `list`
 
 ### 7.4 Editing a student : `edit`
 
-Edits an existing student in the list of students.
+Edits an existing person in the list of students.
 
 Format: `edit STUDENT_ID [id/STUDENT_ID] [n/NAME] [e/EMAIL] [g/GRADE] [gp/GROUP_NAME]...`
 
-* Edits the student with the specified `STUDENT_ID`.
+* Edits the person with the specified `STUDENT_ID`.
 * The `STUDENT_ID` refers to the id corresponding to the student in the list.
 * The `STUDENT_ID` is case-sensitive, must be a String starting with ‘A’ and ending with any letter, with a total length of 9
 * The student with the specified `STUDENT_ID` must exist in the list.
@@ -280,8 +254,8 @@ Format: `edit STUDENT_ID [id/STUDENT_ID] [n/NAME] [e/EMAIL] [g/GRADE] [gp/GROUP_
 * Use of `GROUP` prefix `gp/` in an edit command without specifying `GROUP_NAME` will clear all existing `GROUP` of the student.
 
 Examples:
-*  `edit A0123459X e/e0123450@u.nus.edu` Edits the email address of the student with student_id = A0123459X to be `e0123450@u.nus.edu`.
-*  `edit A0123459X n/John Doe` Edits the name of the student with student_id = A0123459X to be `John Doe`.
+*  `edit A0123459X e/e0123450@u.nus.edu` Edits the email address of the person with student_id = A0123459X to be `e0123450@u.nus.edu`.
+*  `edit A0123459X n/John Doe` Edits the name of the person with student_id = A0123459X to be `John Doe`.
 
 Expected output:
 ![EditUI](images/EditUI.png)
@@ -306,7 +280,7 @@ Deletes the specified student from the list.
 
 Format: `delete STUDENT_ID`
 
-* Deletes the student at the specified `STUDENT_ID`.
+* Deletes the person at the specified `STUDENT_ID`.
 * The `STUDENT_ID` refers to the id corresponding to the student in the list.
 * The `STUDENT_ID` is case-sensitive, must be a String starting with ‘A’ and ending with any letter, with a total length of 9
 * The student with the specified `STUDENT_ID` must exists in the list.
@@ -385,14 +359,14 @@ Format: `clear`
 ### 7.10 Archiving Features
 #### 7.10.1 Archiving a student : `archive`
 
-Archives a student from the `persons` list to the archived list.
+Archives a student from the person list to the archived list.
 
 Format: `archive STUDENT_ID`
 
 * Archives a student with the specified `STUDENT_ID`.
 * `Student_ID` should **start with A follow by 7 digits and ends with a letter [A-Z]**.
     * e.g. `A0123459X`
-* The student with the specified `STUDENT_ID` must exists in the `persons` list.
+* The student with the specified `STUDENT_ID` must exists in the person list.
 
 Example:
 * `archive A0123459X` archives a student with the student_id "A0123459X".
@@ -438,7 +412,7 @@ Expected output:
 
 #### 7.10.4 Unarchiving a student : `unarchived`
 
-Unarchives a student from the archived list to the `persons` list.
+Unarchives a student from the archived list to the person list.
 
 Format: `unarchived STUDENT_ID`
 
